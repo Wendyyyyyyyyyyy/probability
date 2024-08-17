@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Part 2 Typesetting documents | Communication in Math and Statistics</title>
+  <meta name="description" content="Communication in Math and Statistics textbook." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Part 2 Typesetting documents | Communication in Math and Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Communication in Math and Statistics textbook." />
+  <meta name="github-repo" content="Wendyyyyyyyyyyy/Communication-Intensive-Courses-in-Mathematics" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Part 2 Typesetting documents | Communication in Math and Statistics" />
+  
+  <meta name="twitter:description" content="Communication in Math and Statistics textbook." />
+  
+
+<meta name="author" content="Ka Ho LAW" />
+
+
+<meta name="date" content="2024-06-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="writing_subject.html"/>
+<link rel="next" href="typesetting_laTeX.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+.small-table {
+  font-size: 12px; /* Smaller text size */
+}
+.small-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+.small-table th, .small-table td {
+  border: 1px solid black;
+  padding: 5px;
+  vertical-align: top;
+}
+.small-table td:first-child {
+  padding-right: 10px;
+}
+.small-table td:last-child {
+  padding-left: 10px;
+}
+.small-table th {
+  background-color: #f2f2f2;
+}
+.red {
+      color: red;
+      font-weight: bold;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+    <div class="book-summary">
+      <nav role="navigation">
+        <ul class="summary">
+          <li><a href="./">Communication in Math and Statistics</a></li>
+          <li class="divider"></li>
+          <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+          <li class="chapter" data-level="1" data-path="writing_basic.html"><a href="writing_basic.html"><i class="fa fa-check"></i><b>1</b>Writing</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html"><i class="fa fa-check"></i>Basic principles</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#using-complete-sentences"><i class="fa fa-check"></i>Using Complete Sentences</a></li>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#starting-sentences-with-capital-letters"><i class="fa fa-check"></i>Starting Sentences with Capital Letters</a></li>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#commas-between-variables"><i class="fa fa-check"></i>Commas between Variables</a></li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#using-words-properly"><i class="fa fa-check"></i>Using words properly</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#grammatical-errors"><i class="fa fa-check"></i>Grammatical Errors</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#use-of-articles"><i class="fa fa-check"></i>The use of articles</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#difference-between-singular-and-plural"><i class="fa fa-check"></i>The difference between singular and plural</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#different-verb-forms"><i class="fa fa-check"></i>The different verb forms</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#verb-to-be-and-verb-to-do"><i class="fa fa-check"></i>Verb-to-be and verb-to-do</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#converting-word-forms"><i class="fa fa-check"></i>Converting between different word forms</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#lexical-errors"><i class="fa fa-check"></i>Lexical Errors</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#order-of-words"><i class="fa fa-check"></i>The order of words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#choice-of-words"><i class="fa fa-check"></i>Choice of words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#other-lexical-errors"><i class="fa fa-check"></i>Other lexical errors</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#other-issues"><i class="fa fa-check"></i>Other Issues</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#words-with-similar-pronunciations"><i class="fa fa-check"></i>Words with similar pronunciations</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#frequently-confused-words"><i class="fa fa-check"></i>Frequently confused words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#use-of-linking-verbs"><i class="fa fa-check"></i>Use of linking verbs and punctuation</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#spelling"><i class="fa fa-check"></i>Spelling</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#using-symbols-properly"><i class="fa fa-check"></i>Using symbols properly</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-equal-not-equal"><i class="fa fa-check"></i>The Symbols ‘=’ and ‘≠’</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#are-they-equal"><i class="fa fa-check"></i>Are they equal?</a></li>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#non-transitivity-of-not-equal"><i class="fa fa-check"></i>Non-transitivity of ≠</a></li>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#proper-order"><i class="fa fa-check"></i>Proper order</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-implies-iff"><i class="fa fa-check"></i>The Symbols ‘⇒’ and ‘⇔’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-forall-exists"><i class="fa fa-check"></i>The Symbols ‘∀’ and ‘∃’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-element-subset"><i class="fa fa-check"></i>The Symbols ‘∈’ and ‘⊆’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#overusing-symbols"><i class="fa fa-check"></i>Overusing Symbols</a></li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#subject-specific-usage"><i class="fa fa-check"></i>Subject-specific usage</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#elementary-algebra"><i class="fa fa-check"></i>Elementary Algebra</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#geometry"><i class="fa fa-check"></i>Geometry</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#mathematical-induction"><i class="fa fa-check"></i>Mathematical Induction</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#functions-and-calculus"><i class="fa fa-check"></i>Functions and Calculus</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#linear-algebra"><i class="fa fa-check"></i>Linear Algebra</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="chapter" data-level="2" data-path="typesetting_basic.html"><a href="typesetting_basic.html"><i class="fa fa-check"></i><b>2</b> Typesetting documents</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Basic"><i class="fa fa-check"></i>Basic</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Mathematical_modes"><i class="fa fa-check"></i>Mathematical modes</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Inline_math_mode"><i class="fa fa-check"></i>Inline math mode</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Display_math_mode"><i class="fa fa-check"></i>Display math mode</a></li>
+                  </ul>
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Another_example"><i class="fa fa-check"></i>Another example</a></li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Reference_guide"><i class="fa fa-check"></i>Reference guide</a></li>
+                </ul> 
+              </li>             
+              <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#laTeX"><i class="fa fa-check"></i>LaTeX</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Fractions_and_Binomials"><i class="fa fa-check"></i>Fractions and Binomials</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Displaying_fractions"><i class="fa fa-check"></i>Displaying fractions</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Text-style_fractions"><i class="fa fa-check"></i>Text-style fractions</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Size_and_spacing_within_typeset_mathematics"><i class="fa fa-check"></i>Size and spacing within typeset mathematics</a></li>                    
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Continued_fractions"><i class="fa fa-check"></i>Continued fractions</a></li>
+                  </ul>              
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Matrices"><i class="fa fa-check"></i>Matrices</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#amsmath_matrix_environments"><i class="fa fa-check"></i>amsmath matrix environments</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Inline_matrices"><i class="fa fa-check"></i>Inline matrices</a></li>
+                  </ul>
+                </li>
+                </ul>                
+              </li>
+              <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Figures"><i class="fa fa-check"></i>Figures</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Pgfplots_package"><i class="fa fa-check"></i>Pgfplots</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Introduction"><i class="fa fa-check"></i>Introduction</a>
+                        <!--<ul>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#The_document_preamble"><i class="fa fa-check"></i>1.1 The document preamble</a></li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Compilation_time"><i class="fa fa-check"></i>1.2 Compilation time (brief background)</a></li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reducing_compilation_time"><i class="fa fa-check"></i>1.3 Reducing compilation time</a></li>
+                        </ul>-->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_example"><i class="fa fa-check"></i>Basic example </a>
+
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#2D_plots"><i class="fa fa-check"></i>2D plots</a>
+                        <!-- <ul>
+                          
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_mathematical_expressions"><i class="fa fa-check"></i>3.1 Plotting mathematical expressions</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_from_data"><i class="fa fa-check"></i>3.2 Plotting from data</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Scatter_plots"><i class="fa fa-check"></i>3.3 Scatter plots</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Bar_graphs"><i class="fa fa-check"></i>3.4 Bar graphs</a>
+
+                          </li>
+                        </ul>-->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#3D_Plots"><i class="fa fa-check"></i>3D Plots</a>
+                        <!-- <ul>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_mathematical_expressions"><i class="fa fa-check"></i>4.1 Plotting mathematical expressions</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Contour_plots"><i class="fa fa-check"></i>4.2 Contour plots</a>
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_surface_from_data"><i class="fa fa-check"></i>4.3 Plotting a surface from data</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Parametric_plot"><i class="fa fa-check"></i>4.4 Parametric plot</a>
+
+                          </li>
+                        </ul>
+                        -->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reference_guide"><i class="fa fa-check"></i> Reference guide</a></li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#TikZ_package"><i class="fa fa-check"></i>TikZ</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_elements"><i class="fa fa-check"></i>Basic elements</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_geometric_shapes"><i class="fa fa-check"></i>Basic geometric shapes</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Diagrams"><i class="fa fa-check"></i>Diagrams</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reference_Guide"><i class="fa fa-check"></i>Reference Guide</a></li>
+                    </ul>
+                </li>
+                </ul>         
+              </li>
+            </ul>
+          </li>
+          <li class="chapter" data-level="3" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html"><i class="fa fa-check"></i><b>3</b> Presenting ideas orally</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#general-skills-in-oral-presentation"><i class="fa fa-check"></i>General skills in oral presentation</a></li>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#when-giving-a-white-board-presentation"><i class="fa fa-check"></i>When giving a white board presentation</a></li>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#when-giving-a-presentation-using-slides"><i class="fa fa-check"></i>When giving a presentation using slides</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Communication in Math and Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="typesetting" class="section level1">
+<h1><span class="header-section-number">Part 2</span> Typesetting documents</h1>
+<div id="Basic" class="section level2 unnumbered">
+
+
+  <h2><span class="header-section-number">2.1</span> Basic</h2>
+  <p>The principle of using mathematical terminology is basically choosing the right word for the right occasion. Here we split the examples according to the subject area.</p>
+
+
+
+
+  <h3><span class="header-section-number" id="Introduction">2.1.1</span>Introduction</h3>
+  <p>LaTeX's features for typesetting mathematics make it a compelling choice for writing technical documents. This article shows the most basic commands needed to get started with writing maths using LaTeX.
+  </p><p>Writing basic equations in LaTeX is straightforward, for example:
+  </p>
+  <p class="mw-empty-elt"></p><div class="example">
+  <div class="code">
+  <div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+  The well known Pythagorean theorem <span class="s">\(</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> y^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> z^</span><span class="m">2</span><span class="s">\)</span> was 
+  proved to be invalid for other exponents. 
+  Meaning the next equation has no integer solutions:
+
+  <span class="sb">\[</span><span class="nb"> x^n </span><span class="o">+</span><span class="nb"> y^n </span><span class="o">=</span><span class="nb"> z^n </span><span class="s">\]</span>
+
+  <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+  </pre></div>
+  </div>
+  </div>
+
+  <p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+  &amp;snip_name=Basic+math+example
+  &amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cbegin%7Bdocument%7D%0A%0AThe+well+known+Pythagorean+theorem+%5C%28x%5E2+%2B+y%5E2+%3D+z%5E2%5C%29+was+%0Aproved+to+be+invalid+for+other+exponents.+%0AMeaning+the+next+equation+has+no+integer+solutions%3A%0A%0A%5C%5B+x%5En+%2B+y%5En+%3D+z%5En+%5C%5D%0A%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+  </p><p class="mw-empty-elt"></p>
+  <div class="example">
+    <div class="output" style="text-align: center;">
+        <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/f/fc/MathExpressions.png" alt="Example of math equation" width="600" height="140" style="padding:20px;display: block;margin: 0 auto;">
+    </div>
+</div>
+
+  <p>As you see, the way the equations are displayed depends on the delimiter, in this case <code>\[...\]</code> and <code>\(...\)</code>.
+  </p>
+  <h3><span class="header-section-number" id="Mathematical_modes">2.1.2</span>Mathematical modes</h3>
+  <p><span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span> allows two writing modes for mathematical expressions: the <em>inline</em> math mode and <em>display</em> math mode:
+  </p>
+  <ul><li><em>inline</em> math mode is used to write formulas that are part of a paragraph</li>
+  <li><em>display</em> math mode is used to write expressions that are not part of a paragraph, and are therefore put on separate lines</li></ul>
+  <h4><span class="header-section-number" id="Inline_math_mode">2.1.2.1</span>Inline math mode</h4>
+  <p>You can use any of these "delimiters" to typeset your math in inline mode:
+  </p>
+  <ul><li><code>\(...\)</code></li>
+  <li><code>$...$</code></li>
+  <li><code>\begin{math}...\end{math}</code></li></ul>
+  <p>They all work and the choice is a matter of taste, so let's see some examples.
+  </p>
+  <p class="mw-empty-elt"></p><div class="example">
+  <div class="code">
+  <div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+  <span class="k">\noindent</span> Standard <span class="k">\LaTeX</span><span class="nb">{}</span> practice is to write inline math by enclosing it between <span class="k">\verb</span>|<span class="s">\(</span><span class="nb">...</span><span class="s">\)</span>|:
+
+  <span class="k">\begin</span><span class="nb">{</span>quote<span class="nb">}</span>
+  In physics, the mass-energy equivalence is stated 
+  by the equation <span class="s">\(</span><span class="nb">E</span><span class="o">=</span><span class="nb">mc^</span><span class="m">2</span><span class="s">\)</span>, discovered in 1905 by Albert Einstein.
+  <span class="k">\end</span><span class="nb">{</span>quote<span class="nb">}</span>
+
+  <span class="k">\noindent</span> Instead if writing (enclosing) inline math between <span class="k">\verb</span>|<span class="s">\(</span><span class="nb">...</span><span class="s">\)</span>| you can use <span class="k">\texttt</span><span class="nb">{</span><span class="k">\$</span>...<span class="k">\$</span><span class="nb">}</span> to achieve the same result:
+
+  <span class="k">\begin</span><span class="nb">{</span>quote<span class="nb">}</span>
+  In physics, the mass-energy equivalence is stated 
+  by the equation <span class="s">$</span><span class="nb">E</span><span class="o">=</span><span class="nb">mc^</span><span class="m">2</span><span class="s">$</span>, discovered in 1905 by Albert Einstein.
+  <span class="k">\end</span><span class="nb">{</span>quote<span class="nb">}</span>
+
+  <span class="k">\noindent</span> Or, you can use <span class="k">\verb</span>|<span class="k">\begin</span><span class="nb">{</span>math<span class="nb">}</span>...<span class="k">\end</span><span class="nb">{</span>math<span class="nb">}</span>|:
+
+  <span class="k">\begin</span><span class="nb">{</span>quote<span class="nb">}</span>
+  In physics, the mass-energy equivalence is stated 
+  by the equation <span class="k">\begin</span><span class="nb">{</span>math<span class="nb">}</span>E=mc<span class="nb">^</span>2<span class="k">\end</span><span class="nb">{</span>math<span class="nb">}</span>, discovered in 1905 by Albert Einstein.
+  <span class="k">\end</span><span class="nb">{</span>quote<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+  </pre></div>
+  </div>
+  </div>
+
+  <p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+  &amp;snip_name=Basic+inline+math+example
+  &amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cbegin%7Bdocument%7D%0A%0A%5Cnoindent+Standard+%5CLaTeX%7B%7D+practice+is+to+write+inline+math+by+enclosing+it+between+%5Cverb%7C%5C%28...%5C%29%7C%3A%0A%0A%5Cbegin%7Bquote%7D%0AIn+physics%2C+the+mass-energy+equivalence+is+stated+%0Aby+the+equation+%5C%28E%3Dmc%5E2%5C%29%2C+discovered+in+1905+by+Albert+Einstein.%0A%5Cend%7Bquote%7D%0A%0A%5Cnoindent+Instead+if+writing+%28enclosing%29+inline+math+between+%5Cverb%7C%5C%28...%5C%29%7C+you+can+use+%5Ctexttt%7B%5C%24...%5C%24%7D+to+achieve+the+same+result%3A%0A%0A%5Cbegin%7Bquote%7D%0AIn+physics%2C+the+mass-energy+equivalence+is+stated+%0Aby+the+equation+%24E%3Dmc%5E2%24%2C+discovered+in+1905+by+Albert+Einstein.%0A%5Cend%7Bquote%7D%0A%0A%5Cnoindent+Or%2C+you+can+use+%5Cverb%7C%5Cbegin%7Bmath%7D...%5Cend%7Bmath%7D%7C%3A%0A%0A%5Cbegin%7Bquote%7D%0AIn+physics%2C+the+mass-energy+equivalence+is+stated+%0Aby+the+equation+%5Cbegin%7Bmath%7DE%3Dmc%5E2%5Cend%7Bmath%7D%2C+discovered+in+1905+by+Albert+Einstein.%0A%5Cend%7Bquote%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+  </p><p class="mw-empty-elt"></p>
+  <div class="example">
+    <div class="output" style="text-align: center;">
+        <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/6/6b/Inlinemathmarkup.png" alt="Example of equation inline" width="600" height="300" style="padding:20px;display: block;margin: 0 auto;">
+    </div>
+</div>
+
+  <h4><span class="header-section-number" id="Display_math_mode">2.1.2.2</span>Display math mode</h4>
+  <p>Use one of these constructions to typeset maths in display mode:
+  </p>
+  <ul><li><code>\[...\]</code></li>
+  <li><code>\begin{displaymath}...\end{displaymath}</code></li>
+  <li><code>\begin{equation}...\end{equation}</code></li></ul>
+  <p>Display math mode has two versions which produce numbered or unnumbered equations. Let's look at a basic example:
+  </p>
+  <p class="mw-empty-elt"></p><div class="example">
+  <div class="code">
+  <div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+  The mass-energy equivalence is described by the famous equation
+
+  <span class="sb">\[</span><span class="nb">E</span><span class="o">=</span><span class="nb">mc^</span><span class="m">2</span><span class="s">\]</span>
+
+  discovered in 1905 by Albert Einstein. 
+  In natural units (<span class="s">$</span><span class="nb">c</span><span class="s">$</span> = 1), the formula expresses the identity
+
+  <span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+  E=m
+  <span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+  </pre></div>
+  </div>
+  </div>
+
+  <p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+  &amp;snip_name=Basic+math+example
+  &amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cbegin%7Bdocument%7D%0AThe+mass-energy+equivalence+is+described+by+the+famous+equation%0A%0A%5C%5BE%3Dmc%5E2%5C%5D%0A%0Adiscovered+in+1905+by+Albert+Einstein.+%0AIn+natural+units+%28%24c%24+%3D+1%29%2C+the+formula+expresses+the+identity%0A%0A%5Cbegin%7Bequation%7D%0AE%3Dm%0A%5Cend%7Bequation%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+  </p><p class="mw-empty-elt"></p>
+  <div class="example">
+    <div class="output" style="text-align: center;">
+        <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/06/Displayex.png" alt="Displayex.png" width="600" height="210" style="padding:20px;display: block;margin: 0 auto;">
+    </div>
+</div>
+
+  <h3><span class="header-section-number" id="Another_example">2.1.3</span>Another example</h3>
+  <p>The following example uses the <code>equation*</code> environment which is provided by the <code>amsmath</code> package—see the <a href="https://www.overleaf.com/learn/latex/Aligning_equations" class="mw-redirect" title="Aligning equations"> <code>amsmath</code> article</a> for more information.
+  </p>
+  <p class="mw-empty-elt"></p><div class="example">
+  <div class="code">
+  <div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+  <span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span> <span class="c">% for the equation* environment</span>
+  <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+  This is a simple math expression <span class="s">\(</span><span class="nv">\sqrt</span><span class="nb">{x^</span><span class="m">2</span><span class="o">+</span><span class="m">1</span><span class="nb">}</span><span class="s">\)</span> inside text. 
+  And this is also the same: 
+  <span class="k">\begin</span><span class="nb">{</span>math<span class="nb">}</span>
+  <span class="k">\sqrt</span><span class="nb">{</span>x<span class="nb">^</span>2+1<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>math<span class="nb">}</span>
+  but by using another command.
+
+  This is a simple math expression without numbering
+  <span class="sb">\[</span><span class="nv">\sqrt</span><span class="nb">{x^</span><span class="m">2</span><span class="o">+</span><span class="m">1</span><span class="nb">}</span><span class="s">\]</span> 
+  separated from text.
+
+  This is also the same:
+  <span class="k">\begin</span><span class="nb">{</span>displaymath<span class="nb">}</span>
+  <span class="k">\sqrt</span><span class="nb">{</span>x<span class="nb">^</span>2+1<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>displaymath<span class="nb">}</span>
+
+  <span class="k">\ldots</span> and this:
+  <span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  <span class="k">\sqrt</span><span class="nb">{</span>x<span class="nb">^</span>2+1<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+
+  <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+  </pre></div>
+  </div>
+  </div>
+
+  <p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+  &amp;snip_name=Typesetting+maths+example
+  &amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bamsmath%7D+%25+for+the+equation%2A+environment%0A%5Cbegin%7Bdocument%7D%0A%0AThis+is+a+simple+math+expression+%5C%28%5Csqrt%7Bx%5E2%2B1%7D%5C%29+inside+text.+%0AAnd+this+is+also+the+same%3A+%0A%5Cbegin%7Bmath%7D%0A%5Csqrt%7Bx%5E2%2B1%7D%0A%5Cend%7Bmath%7D%0Abut+by+using+another+command.%0A%0AThis+is+a+simple+math+expression+without+numbering%0A%5C%5B%5Csqrt%7Bx%5E2%2B1%7D%5C%5D+%0Aseparated+from+text.%0A%0AThis+is+also+the+same%3A%0A%5Cbegin%7Bdisplaymath%7D%0A%5Csqrt%7Bx%5E2%2B1%7D%0A%5Cend%7Bdisplaymath%7D%0A%0A%5Cldots+and+this%3A%0A%5Cbegin%7Bequation%2A%7D%0A%5Csqrt%7Bx%5E2%2B1%7D%0A%5Cend%7Bequation%2A%7D%0A%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+  </p><p class="mw-empty-elt"></p>
+  <div class="example">
+    <div class="output" style="text-align: center;">
+        <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/f/fe/Amsexample.png" alt="Amsexample.png" width="600" height="269" style="padding:20px;display: block;margin: 0 auto;">
+    </div>
+</div>
+
+  <h3><span class="header-section-number" id="Reference_guide">2.1.4</span>Reference guide</h3>
+  <p>Below is a table with some common maths symbols. For a more complete list see the   <a href="https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols" title="List of Greek letters and math symbols">List of Greek letters and math symbols</a>:
+  </p>
+  <table class="wikitable">
+  <tbody><tr>
+  <th>description</th>
+  <th>code</th>
+  <th>examples
+  </th></tr>
+  <tr>
+  <td>Greek letters</td>
+  <td><code>\alpha \beta \gamma \rho \sigma \delta \epsilon</code></td>
+  <td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" display="true" tabindex="0" ctxtmenu_counter="0" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="11.735ex" height="2.111ex" role="img" focusable="false" viewBox="0 -717 5187 933" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.489ex;"><defs><path id="MJX-1-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path><path id="MJX-1-TEX-N-A0" d=""></path><path id="MJX-1-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path><path id="MJX-1-TEX-I-1D6FE" d="M31 249Q11 249 11 258Q11 275 26 304T66 365T129 418T206 441Q233 441 239 440Q287 429 318 386T371 255Q385 195 385 170Q385 166 386 166L398 193Q418 244 443 300T486 391T508 430Q510 431 524 431H537Q543 425 543 422Q543 418 522 378T463 251T391 71Q385 55 378 6T357 -100Q341 -165 330 -190T303 -216Q286 -216 286 -188Q286 -138 340 32L346 51L347 69Q348 79 348 100Q348 257 291 317Q251 355 196 355Q148 355 108 329T51 260Q49 251 47 251Q45 249 31 249Z"></path><path id="MJX-1-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-1-TEX-I-1D70E" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path><path id="MJX-1-TEX-I-1D6FF" d="M195 609Q195 656 227 686T302 717Q319 716 351 709T407 697T433 690Q451 682 451 662Q451 644 438 628T403 612Q382 612 348 641T288 671T249 657T235 628Q235 584 334 463Q401 379 401 292Q401 169 340 80T205 -10H198Q127 -10 83 36T36 153Q36 286 151 382Q191 413 252 434Q252 435 245 449T230 481T214 521T201 566T195 609ZM112 130Q112 83 136 55T204 27Q233 27 256 51T291 111T309 178T316 232Q316 267 309 298T295 344T269 400L259 396Q215 381 183 342T137 256T118 179T112 130Z"></path><path id="MJX-1-TEX-I-1D716" d="M227 -11Q149 -11 95 41T40 174Q40 262 87 322Q121 367 173 396T287 430Q289 431 329 431H367Q382 426 382 411Q382 385 341 385H325H312Q191 385 154 277L150 265H327Q340 256 340 246Q340 228 320 219H138V217Q128 187 128 143Q128 77 160 52T231 26Q258 26 284 36T326 57T343 68Q350 68 354 58T358 39Q358 36 357 35Q354 31 337 21T289 0T227 -11Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-1-TEX-I-1D6FC"></use></g><g data-mml-node="mtext" transform="translate(640,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(890,0)"><use data-c="1D6FD" xlink:href="#MJX-1-TEX-I-1D6FD"></use></g><g data-mml-node="mtext" transform="translate(1456,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(1706,0)"><use data-c="1D6FE" xlink:href="#MJX-1-TEX-I-1D6FE"></use></g><g data-mml-node="mtext" transform="translate(2249,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(2499,0)"><use data-c="1D70C" xlink:href="#MJX-1-TEX-I-1D70C"></use></g><g data-mml-node="mtext" transform="translate(3016,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(3266,0)"><use data-c="1D70E" xlink:href="#MJX-1-TEX-I-1D70E"></use></g><g data-mml-node="mtext" transform="translate(3837,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(4087,0)"><use data-c="1D6FF" xlink:href="#MJX-1-TEX-I-1D6FF"></use></g><g data-mml-node="mtext" transform="translate(4531,0)"><use data-c="A0" xlink:href="#MJX-1-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(4781,0)"><use data-c="1D716" xlink:href="#MJX-1-TEX-I-1D716"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>α</mi><mtext>&nbsp;</mtext><mi>β</mi><mtext>&nbsp;</mtext><mi>γ</mi><mtext>&nbsp;</mtext><mi>ρ</mi><mtext>&nbsp;</mtext><mi>σ</mi><mtext>&nbsp;</mtext><mi>δ</mi><mtext>&nbsp;</mtext><mi>ϵ</mi></math></mjx-assistive-mml></mjx-container>
+  </td></tr>
+  <tr>
+  <td>Binary operators</td>
+  <td><code>\times \otimes \oplus \cup \cap</code></td>
+  <td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \times }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>×</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \times }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ffafff1ad26cbe49045f19a67ce532116a32703" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:0.019ex;margin-bottom:-0.19ex;width:1.808ex;height:1.509ex" alt="{\displaystyle \times }"></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \otimes }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>⊗</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \otimes }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de29098f5a34ee296a505681a0d5e875070f2aea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-0.505ex;width:1.808ex;height:2.176ex" alt="{\displaystyle \otimes }"></span>  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \oplus }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>⊕</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \oplus }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9eed86d866e6eba3ac47c710f60" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-0.505ex;width:1.808ex;height:2.176ex" alt="{\displaystyle \oplus }"></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \cup }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>∪</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \cup }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8ff7d0293ad19b43524a133ae5129f3d71f2040" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-0.338ex;width:1.55ex;height:2.009ex" alt="{\displaystyle \cup }"></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \cap }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>∩</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \cap }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d4e886e6f5a28a33e073fb108440c152ecfe2d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-0.338ex;width:1.55ex;height:2.009ex" alt="{\displaystyle \cap }"></span>
+  </td></tr>
+  <tr>
+  <td>Relation operators</td>
+  <td><code>&lt; &gt; \subset \supset \subseteq \supseteq</code></td>
+  <td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle <\ >\subset \ \supset \ \subseteq \ \supseteq }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>&lt;</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>&gt;⊂</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>⊃</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>⊆</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>⊇</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle &lt;\ &gt;\subset \ \supset \ \subseteq \ \supseteq }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a63da6a7d529a33588f1984ad3d395afa2fb7f84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-0.505ex;width:18.333ex;height:2.176ex" alt="{\displaystyle <\ >\subset \ \supset \ \subseteq \ \supseteq }"></span>
+  </td></tr>
+  <tr>
+  <td>Others</td>
+  <td><code>\int \oint \sum \prod</code></td>
+  <td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display:none"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \int \ \oint \ \sum \ \prod }">
+    <semantics>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mo>∫</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>∮</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>∑</mo>
+          <mtext>&nbsp;</mtext>
+          <mo>∏</mo>
+        </mstyle>
+      </mrow>
+      <annotation encoding="application/x-tex">{\displaystyle \int \ \oint \ \sum \ \prod }</annotation>
+    </semantics>
+  </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c8408720477c3b44a83b7bf9d6c0448caf97a16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align:-2.338ex;width:14.776ex;height:5.676ex" alt="{\displaystyle \int \ \oint \ \sum \ \prod }"></span>
+  </td></tr></tbody></table>
+  <p>Different classes of mathematical symbols are characterized by different formatting (for example, variables are italicized, but <a href="https://www.overleaf.com/learn/latex/Operators" title="Operators">operators</a> are not) and different <a href="https://www.overleaf.com/learn/latex/Spacing_in_math_mode" title="Spacing in math mode">spacing</a>.
+  </p>
+  <!--
+  <h3><span class="header-section-number" id="Further_reading">Further reading</span></h3>
+  <p>The mathematics mode in LaTeX is very flexible and powerful, there is much more that can be done with it:
+  </p>
+  <ul><li><a href="/learn/latex/Subscripts_and_superscripts" title="Subscripts and superscripts">Subscripts and superscripts</a></li>
+  <li><a href="/learn/latex/Brackets_and_Parentheses" title="Brackets and Parentheses">Brackets and Parentheses</a></li>
+  <li><a href="/learn/latex/Fractions_and_Binomials" title="Fractions and Binomials">Fractions and Binomials</a></li>
+  <li><a href="/learn/latex/Aligning_equations" class="mw-redirect" title="Aligning equations">Aligning Equations</a></li>
+  <li><a href="/learn/latex/Operators" title="Operators">Operators</a></li>
+  <li><a href="/learn/latex/Spacing_in_math_mode" title="Spacing in math mode">Spacing in math mode</a></li>
+  <li><a href="/learn/latex/Integrals%2C_sums_and_limits" title="Integrals, sums and limits">Integrals, sums and limits</a></li>
+  <li><a href="/learn/latex/Display_style_in_math_mode" title="Display style in math mode">Display style in math mode</a></li>
+  <li><a href="/learn/latex/List_of_Greek_letters_and_math_symbols" title="List of Greek letters and math symbols">List of Greek letters and math symbols</a></li>
+  <li><a href="/learn/latex/Mathematical_fonts" title="Mathematical fonts">Mathematical fonts</a></li></ul>
+  -->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="writing_subject.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="typesetting_laTeX.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Wendyyyyyyyyyyy/Communication-Intensive-Courses-in-Mathematics/edit/master/writing.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

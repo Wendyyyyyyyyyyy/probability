@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Part 2 Typesetting documents | Communication in Math and Statistics</title>
+  <meta name="description" content="Communication in Math and Statistics textbook." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Part 2 Typesetting documents | Communication in Math and Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Communication in Math and Statistics textbook." />
+  <meta name="github-repo" content="Wendyyyyyyyyyyy/Communication-Intensive-Courses-in-Mathematics" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Part 2 Typesetting documents | Communication in Math and Statistics" />
+  
+  <meta name="twitter:description" content="Communication in Math and Statistics textbook." />
+  
+
+<meta name="author" content="Ka Ho LAW" />
+
+
+<meta name="date" content="2024-06-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="typesetting_laTeX.html"/>
+<link rel="next" href="presenting-ideas-orally.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+.small-table {
+  font-size: 12px; /* Smaller text size */
+}
+.small-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+.small-table th, .small-table td {
+  border: 1px solid black;
+  padding: 5px;
+  vertical-align: top;
+}
+.small-table td:first-child {
+  padding-right: 10px;
+}
+.small-table td:last-child {
+  padding-left: 10px;
+}
+.small-table th {
+  background-color: #f2f2f2;
+}
+.red {
+      color: red;
+      font-weight: bold;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+    <div class="book-summary">
+      <nav role="navigation">
+        <ul class="summary">
+          <li><a href="./">Communication in Math and Statistics</a></li>
+          <li class="divider"></li>
+          <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+          <li class="chapter" data-level="1" data-path="writing_basic.html"><a href="writing_basic.html"><i class="fa fa-check"></i><b>1</b>Writing</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html"><i class="fa fa-check"></i>Basic principles</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#using-complete-sentences"><i class="fa fa-check"></i>Using Complete Sentences</a></li>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#starting-sentences-with-capital-letters"><i class="fa fa-check"></i>Starting Sentences with Capital Letters</a></li>
+                  <li class="chapter" data-level="" data-path="writing_basic.html"><a href="writing_basic.html#commas-between-variables"><i class="fa fa-check"></i>Commas between Variables</a></li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#using-words-properly"><i class="fa fa-check"></i>Using words properly</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#grammatical-errors"><i class="fa fa-check"></i>Grammatical Errors</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#use-of-articles"><i class="fa fa-check"></i>The use of articles</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#difference-between-singular-and-plural"><i class="fa fa-check"></i>The difference between singular and plural</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#different-verb-forms"><i class="fa fa-check"></i>The different verb forms</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#verb-to-be-and-verb-to-do"><i class="fa fa-check"></i>Verb-to-be and verb-to-do</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#converting-word-forms"><i class="fa fa-check"></i>Converting between different word forms</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#lexical-errors"><i class="fa fa-check"></i>Lexical Errors</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#order-of-words"><i class="fa fa-check"></i>The order of words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#choice-of-words"><i class="fa fa-check"></i>Choice of words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#other-lexical-errors"><i class="fa fa-check"></i>Other lexical errors</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#other-issues"><i class="fa fa-check"></i>Other Issues</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#words-with-similar-pronunciations"><i class="fa fa-check"></i>Words with similar pronunciations</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#frequently-confused-words"><i class="fa fa-check"></i>Frequently confused words</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#use-of-linking-verbs"><i class="fa fa-check"></i>Use of linking verbs and punctuation</a></li>
+                      <li class="chapter" data-level="" data-path="writing_word.html"><a href="writing_word.html#spelling"><i class="fa fa-check"></i>Spelling</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#using-symbols-properly"><i class="fa fa-check"></i>Using symbols properly</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-equal-not-equal"><i class="fa fa-check"></i>The Symbols ‘=’ and ‘≠’</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#are-they-equal"><i class="fa fa-check"></i>Are they equal?</a></li>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#non-transitivity-of-not-equal"><i class="fa fa-check"></i>Non-transitivity of ≠</a></li>
+                      <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#proper-order"><i class="fa fa-check"></i>Proper order</a></li>
+                    </ul>
+                  </li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-implies-iff"><i class="fa fa-check"></i>The Symbols ‘⇒’ and ‘⇔’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-forall-exists"><i class="fa fa-check"></i>The Symbols ‘∀’ and ‘∃’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#symbols-element-subset"><i class="fa fa-check"></i>The Symbols ‘∈’ and ‘⊆’</a></li>
+                  <li class="chapter" data-level="" data-path="writing_symbol.html"><a href="writing_symbol.html#overusing-symbols"><i class="fa fa-check"></i>Overusing Symbols</a></li>
+                </ul>
+              </li>
+              <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#subject-specific-usage"><i class="fa fa-check"></i>Subject-specific usage</a>
+                <ul>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#elementary-algebra"><i class="fa fa-check"></i>Elementary Algebra</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#geometry"><i class="fa fa-check"></i>Geometry</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#mathematical-induction"><i class="fa fa-check"></i>Mathematical Induction</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#functions-and-calculus"><i class="fa fa-check"></i>Functions and Calculus</a></li>
+                  <li class="chapter" data-level="" data-path="writing_subject.html"><a href="writing_subject.html#linear-algebra"><i class="fa fa-check"></i>Linear Algebra</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="chapter" data-level="2" data-path="typesetting_basic.html"><a href="typesetting_basic.html"><i class="fa fa-check"></i><b>2</b> Typesetting documents</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Basic"><i class="fa fa-check"></i>Basic</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Mathematical_modes"><i class="fa fa-check"></i>Mathematical modes</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Inline_math_mode"><i class="fa fa-check"></i>Inline math mode</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Display_math_mode"><i class="fa fa-check"></i>Display math mode</a></li>
+                  </ul>
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Another_example"><i class="fa fa-check"></i>Another example</a></li>
+                <li class="chapter" data-level="" data-path="typesetting_basic.html"><a href="typesetting_basic.html#Reference_guide"><i class="fa fa-check"></i>Reference guide</a></li>
+                </ul> 
+              </li>             
+              <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#laTeX"><i class="fa fa-check"></i>LaTeX</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Fractions_and_Binomials"><i class="fa fa-check"></i>Fractions and Binomials</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Displaying_fractions"><i class="fa fa-check"></i>Displaying fractions</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Text-style_fractions"><i class="fa fa-check"></i>Text-style fractions</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Size_and_spacing_within_typeset_mathematics"><i class="fa fa-check"></i>Size and spacing within typeset mathematics</a></li>                    
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Continued_fractions"><i class="fa fa-check"></i>Continued fractions</a></li>
+                  </ul>              
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Matrices"><i class="fa fa-check"></i>Matrices</a>
+                  <ul>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#amsmath_matrix_environments"><i class="fa fa-check"></i>amsmath matrix environments</a></li>
+                    <li class="chapter" data-level="" data-path="typesetting_laTeX.html"><a href="typesetting_laTeX.html#Inline_matrices"><i class="fa fa-check"></i>Inline matrices</a></li>
+                  </ul>
+                </li>
+                </ul>                
+              </li>
+              <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Figures"><i class="fa fa-check"></i>Figures</a>
+                <ul>
+                <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Pgfplots_package"><i class="fa fa-check"></i>Pgfplots</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Introduction"><i class="fa fa-check"></i>Introduction</a>
+                        <!--<ul>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#The_document_preamble"><i class="fa fa-check"></i>1.1 The document preamble</a></li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Compilation_time"><i class="fa fa-check"></i>1.2 Compilation time (brief background)</a></li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reducing_compilation_time"><i class="fa fa-check"></i>1.3 Reducing compilation time</a></li>
+                        </ul>-->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_example"><i class="fa fa-check"></i>Basic example </a>
+
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#2D_plots"><i class="fa fa-check"></i>2D plots</a>
+                        <!-- <ul>
+                          
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_mathematical_expressions"><i class="fa fa-check"></i>3.1 Plotting mathematical expressions</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_from_data"><i class="fa fa-check"></i>3.2 Plotting from data</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Scatter_plots"><i class="fa fa-check"></i>3.3 Scatter plots</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Bar_graphs"><i class="fa fa-check"></i>3.4 Bar graphs</a>
+
+                          </li>
+                        </ul>-->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#3D_Plots"><i class="fa fa-check"></i>3D Plots</a>
+                        <!-- <ul>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_mathematical_expressions"><i class="fa fa-check"></i>4.1 Plotting mathematical expressions</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Contour_plots"><i class="fa fa-check"></i>4.2 Contour plots</a>
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Plotting_surface_from_data"><i class="fa fa-check"></i>4.3 Plotting a surface from data</a>
+
+                          </li>
+                          <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Parametric_plot"><i class="fa fa-check"></i>4.4 Parametric plot</a>
+
+                          </li>
+                        </ul>
+                        -->
+                      </li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reference_guide"><i class="fa fa-check"></i> Reference guide</a></li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#TikZ_package"><i class="fa fa-check"></i>TikZ</a>
+                    <ul>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Introduction"><i class="fa fa-check"></i>Introduction</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_elements"><i class="fa fa-check"></i>Basic elements</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Basic_geometric_shapes"><i class="fa fa-check"></i>Basic geometric shapes</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Diagrams"><i class="fa fa-check"></i>Diagrams</a></li>
+                      <li class="chapter" data-level="" data-path="typesetting_figure.html"><a href="typesetting_figure.html#Reference_Guide"><i class="fa fa-check"></i>Reference Guide</a></li>
+                    </ul>
+                </li>
+                </ul>         
+              </li>
+            </ul>
+          </li>
+          <li class="chapter" data-level="3" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html"><i class="fa fa-check"></i><b>3</b> Presenting ideas orally</a>
+            <ul>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#general-skills-in-oral-presentation"><i class="fa fa-check"></i>General skills in oral presentation</a></li>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#when-giving-a-white-board-presentation"><i class="fa fa-check"></i>When giving a white board presentation</a></li>
+              <li class="chapter" data-level="" data-path="presenting-ideas-orally.html"><a href="presenting-ideas-orally.html#when-giving-a-presentation-using-slides"><i class="fa fa-check"></i>When giving a presentation using slides</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Communication in Math and Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="typesetting" class="section level1">
+<h1><span class="header-section-number">Lesson 2</span> Typesetting</h1>
+<div id="Figures" class="section level2 unnumbered">
+
+
+  <h1><span class="header-section-number" id="Figures">2.3</span> Figures</h1>
+
+
+  <h2><span class="header-section-number" id="Pgfplots_package">2.3.1</span>Pgfplots package</h2>
+
+
+
+<h2><span class="mw-headline" id="Introduction">2.3.1.1 Introduction</span></h2>
+<p>The <code>pgfplots</code> package, which is based on <a href="https://www.overleaf.com/learn/latex/TikZ_package" title="TikZ package"><code>TikZ</code></a>, is a powerful visualization tool and ideal for creating scientific/technical graphics. The basic idea is that you provide the input data/formula and <code>pgfplots</code> does the rest.
+</p>
+<h3><span class="mw-headline" id="The_document_preamble">The document preamble</span></h3>
+<p>To use the <code>pgfplots</code> package in your document add following line to your preamble:
+</p><p><code>\usepackage{pgfplots}</code>
+</p><p>You also can configure the behaviour of <code>pgfplots</code> in the document preamble. For example, to change the size of each plot and guarantee backwards compatibility (recommended) add the next line:
+</p><p><code>\pgfplotsset{width=10cm,compat=1.9}</code>
+</p><p>This changes the size of each <code>pgfplot</code> figure to 10 centimeters, which is huge; you may use different units (pt, mm, in). The <i>compat</i> parameter is for the code to work on the package version 1.9 or later.
+</p>
+<h3><span id="Compilation_time_.28brief_background.29"></span><span class="mw-headline" id="Compilation_time_(brief_background)">Compilation time (brief background)</span></h3>
+<p>When the original TeX engine was conceived/written, more than 40 years ago, it was not designed for <em>direct</em> production of graphics—those were to be files created by external programs (e.g., MetaPost) and imported into the typeset document. The advent of pdfTeX—which is closely based on the original TeX software—brought the ability to create graphics <em>directly</em> by using pdfTeX's new built-in TeX language commands (called <em>primitives</em>) which can output the PDF operators/data required to produce graphics. The creation of pdfTeX led to the development of sophisticated LaTeX graphics packages, such as <code>TikZ</code>, <code>pgfplots</code> etc, capable of producing graphics coded using high-level LaTeX commands. 
+</p><p>However, behind the scenes, and deep inside the pdfTeX engine (and other engines), those high-level LaTeX graphics commands need to be processed by "converting" them back into low-level pdfTeX engine (primitive) commands which actually generate (output) the PDF operators required to produce the resultant figure(s). That processing of graphical LaTeX commands—expansion and execution of primitives—can take a non-negligible amount of time. Even a single high-level LaTeX graphics command, together with its corresponding data, might require repeated execution of <em>many</em> low-level TeX engine (primitive) commands. From an end-user's perspective, documents containing multiple <code>pgfplots</code> figures, and/or very complex graphics, can take a considerable amount of time to render (compile).
+</p>
+<h3><span class="mw-headline" id="Reducing_compilation_time">Reducing compilation time</span></h3>
+<p>To increase speed of document-compilation you can configure the <code>pgfplots</code> package to export the figures to separate PDF files and then import them into the document: compile once, then re-use the figures. To do that, add the code shown below to the preamble:
+</p>
+<pre>\usepgfplotslibrary{external}
+\tikzexternalize
+</pre>
+<p>See <a href="https://www.overleaf.com/learn/latex/Questions/I_have_a_lot_of_tikz%2C_matlab2tikz_or_pgfplots_figures%2C_so_I%27m_getting_a_compilation_timeout._Can_I_externalise_my_figures%3F" title="Questions/I have a lot of tikz, matlab2tikz or pgfplots figures, so I'm getting a compilation timeout. Can I externalise my figures?"> this help article</a> for further details on how to set up tikz-externalization in your Overleaf project.
+</p>
+<h2><span id="Basic_example_.28also_externalizing_the_figures.29"></span><span class="mw-headline" id="Basic_example">2.3.1.2 Basic example (also externalizing the figures)</span></h2>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[margin=0.25in]</span><span class="nb">{</span>geometry<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>pgfplots<span class="nb">}</span>
+<span class="k">\pgfplotsset</span><span class="nb">{</span>width=10cm,compat=1.9<span class="nb">}</span>
+
+<span class="c">% We will externalize the figures</span>
+<span class="k">\usepgfplotslibrary</span><span class="nb">{</span>external<span class="nb">}</span>
+<span class="k">\tikzexternalize</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+First example is 2D and 3D math expressions plotted side-by-side.
+
+<span class="c">%Here begins the 2D plot</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\addplot</span><span class="na">[color=red]</span><span class="nb">{</span>exp(x)<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="c">%Here ends the 2D plot</span>
+<span class="k">\hskip</span> 5pt
+<span class="c">%Here begins the 3D plot</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\addplot</span>3[
+    surf,
+]
+<span class="nb">{</span>exp(-x<span class="nb">^</span>2-y<span class="nb">^</span>2)*x<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="c">%Here ends the 3D plot</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+example+1
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.25in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%0A%25+We+will+externalize+the+figures%0A%5Cusepgfplotslibrary%7Bexternal%7D%0A%5Ctikzexternalize%0A%0A%5Cbegin%7Bdocument%7D%0A%0AFirst+example+is+2D+and+3D+math+expressions+plotted+side-by-side.%0A%0A%25Here+begins+the+2D+plot%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%0A%5Caddplot%5Bcolor%3Dred%5D%7Bexp%28x%29%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%25Here+ends+the+2D+plot%0A%5Chskip+5pt%0A%25Here+begins+the+3D+plot%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%0A%5Caddplot3%5B%0A++++surf%2C%0A%5D%0A%7Bexp%28-x%5E2-y%5E2%29%2Ax%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%25Here+ends+the+3D+plot%0A%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the result produced by the code above:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/09/Plgplotsex1OLV2.png" alt="Plgplotsex1OLV2.png" width="900" height="390" style="display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h3><span class="mw-headline" id="Explanation_of_the_code">Explanation of the code</span></h3>
+<p>Because <code>pgfplots</code> is based on <code>tikz</code> the plot must be inside a <code>tikzpicture</code> environment. Then the environment declaration <code>\begin{axis}</code>, <code>\end{axis}</code> will set the correct scaling for the plot—check the <a href="#Reference_guide">Reference guide</a> for other axis environments.
+</p><p>To add an actual plot, the command <code>\addplot[color=red]{log(x)};</code> is used. Inside the square brackets, <code>[...]</code>, some options can be passed in; here, we set the <code>color</code> of the plot to <code>red</code>. The square brackets are mandatory, if no options are passed leave a blank space between them. Inside the curly brackets you put the function to plot. Is important to remember that this command must end with a semicolon (;).
+</p><p>To put a second plot next to the first one declare a new <code>tikzpicture</code> environment. Do not insert a new line, but a small blank gap, in this case <code>hskip 10pt</code> will insert a 10pt-wide blank space.
+</p><p>The rest of the syntax is the same, except for the <code>\addplot3 [surf,]{exp(-x^2-y^2)*x};</code>. This will add a 3dplot, and the option <code>surf</code> inside squared brackets declares that it's a surface plot. The function to plot must be placed inside curly brackets. Again, don't forget to put a semicolon (;) at the end of the command.
+</p><p><strong>Note</strong>: It's recommended as a good practice to indent the code—see the second plot in the example above—and to add a comma (,) at the end of each option passed to <code>\addplot</code>. This way the code is more readable and is easier to add further options if needed.
+</p>
+<h2><span class="mw-headline" id="2D_plots">2.3.1.3 2D plots</span></h2>
+<p><code>pgfplots</code>' 2D plotting functionalities are vast—and you can personalize your plots to suit your requirements. Nevertheless, the default options usually give very good results, so all you need to do is feed the data and <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span> will do the rest. 
+</p>
+<h3><span class="mw-headline" id="Plotting_mathematical_expressions">Plotting mathematical expressions</span></h3>
+<p>Here is an example:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[
+    axis lines = left,
+    xlabel = <span class="s">\(</span><span class="nb">x</span><span class="s">\)</span>,
+    ylabel = <span class="nb">{</span><span class="s">\(</span><span class="nb">f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="s">\)</span><span class="nb">}</span>,
+]
+<span class="c">%Below the red parabola is defined</span>
+<span class="k">\addplot</span> [
+    domain=-10:10, 
+    samples=100, 
+    color=red,
+]
+<span class="nb">{</span>x<span class="nb">^</span>2 - 2*x - 1<span class="nb">}</span>;
+<span class="k">\addlegendentry</span><span class="nb">{</span><span class="s">\(</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> </span><span class="o">-</span><span class="nb"> </span><span class="m">2</span><span class="nb">x </span><span class="o">-</span><span class="nb"> </span><span class="m">1</span><span class="s">\)</span><span class="nb">}</span>
+<span class="c">%Here the blue parabola is defined</span>
+<span class="k">\addplot</span> [
+    domain=-10:10, 
+    samples=100, 
+    color=blue,
+    ]
+    <span class="nb">{</span>x<span class="nb">^</span>2 + 2*x + 1<span class="nb">}</span>;
+<span class="k">\addlegendentry</span><span class="nb">{</span><span class="s">\(</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> </span><span class="m">2</span><span class="nb">x </span><span class="o">+</span><span class="nb"> </span><span class="m">1</span><span class="s">\)</span><span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=
+&amp;snip_name=pgfplots+example+2
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.25in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%5B%0A++++axis+lines+%3D+left%2C%0A++++xlabel+%3D+%5C%28x%5C%29%2C%0A++++ylabel+%3D+%7B%5C%28f%28x%29%5C%29%7D%2C%0A%5D%0A%25Below+the+red+parabola+is+defined%0A%5Caddplot+%5B%0A++++domain%3D-10%3A10%2C+%0A++++samples%3D100%2C+%0A++++color%3Dred%2C%0A%5D%0A%7Bx%5E2+-+2%2Ax+-+1%7D%3B%0A%5Caddlegendentry%7B%5C%28x%5E2+-+2x+-+1%5C%29%7D%0A%25Here+the+blue+parabola+is+defined%0A%5Caddplot+%5B%0A++++domain%3D-10%3A10%2C+%0A++++samples%3D100%2C+%0A++++color%3Dblue%2C%0A++++%5D%0A++++%7Bx%5E2+%2B+2%2Ax+%2B+1%7D%3B%0A%5Caddlegendentry%7B%5C%28x%5E2+%2B+2x+%2B+1%5C%29%7D%0A%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/1/1b/Plgplotsex2.png" alt="Plgplotsex2.png" style="width:600px;height:480px;padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_2">Explanation of the code</span></h4>
+<p>Let's analyse the new commands line-by-line:
+</p>
+<dl><dt><code>axis lines = left</code>.</dt>
+<dd>This will set the axis only on the left and bottom sides of the plot, instead of the default <code>box</code>. Further customisation options at the <a href="#Reference_guide">reference guide</a>.</dd></dl>
+<dl><dt><code>xlabel = \(x\)</code> and <code>ylabel = {\(f(x)\)}</code>.</dt>
+<dd>Self-explanatory parameter names, these will let you put a label on the horizontal and vertical axis. Notice the <code>ylabel</code> value in between curly brackets, this brackets tell <code>pgfplots</code> how to group the text. The <code>xlabel</code> could have had brackets too. This is useful for complicated labels that may confuse <code>pgfplots</code>.</dd></dl>
+<dl><dt><code>\addplot</code>.</dt>
+<dd>This will add a plot to the axis, general usage was described at the <a href="#Introduction">introduction</a>. There are two new parameters in this example.</dd></dl>
+<dl><dt><code>domain=-10:10</code>.</dt>
+<dd>This establishes the range of values of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="0" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.294ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 572 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-1-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-1-TEX-I-1D465"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></mjx-assistive-mml></mjx-container>.</dd></dl>
+<dl><dt><code>samples=100</code>.</dt>
+<dd>Determines the number of points in the interval defined by <code>domain</code>. The greater the value of <code>samples</code> the sharper the graph you get, but it will take longer to render.</dd></dl>
+<dl><dt><code>\addlegendentry{\(x^2 - 2x - 1\)}</code>.</dt>
+<dd>This adds the legend to identify the function <mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="1" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="11.37ex" height="2.072ex" role="img" focusable="false" viewBox="0 -833.9 5025.4 915.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJX-2-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-2-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-2-TEX-I-1D465"></use></g><g data-mml-node="mn" transform="translate(605,363) scale(0.707)"><use data-c="32" xlink:href="#MJX-2-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(1230.8,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(2231,0)"><use data-c="32" xlink:href="#MJX-2-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(2731,0)"><use data-c="1D465" xlink:href="#MJX-2-TEX-I-1D465"></use></g><g data-mml-node="mo" transform="translate(3525.2,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(4525.4,0)"><use data-c="31" xlink:href="#MJX-2-TEX-N-31"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn></math></mjx-assistive-mml></mjx-container>.</dd></dl>
+<p>To add another graph to the plot just write a new <code>\addplot</code> entry.
+</p>
+<h3><span class="mw-headline" id="Plotting_from_data">Plotting from data</span></h3>
+<p>Scientific research often yields data that has to be analysed. The next example shows how to plot data with <i>pgfplots</i>:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>Plotting from data:
+
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[
+    title=<span class="nb">{</span>Temperature dependence of CuSO<span class="s">\(</span><span class="nb">_</span><span class="m">4</span><span class="nv">\cdot</span><span class="s">\)</span>5H<span class="s">\(</span><span class="nb">_</span><span class="m">2</span><span class="s">\)</span>O solubility<span class="nb">}</span>,
+    xlabel=<span class="nb">{</span>Temperature [<span class="k">\textcelsius</span>]<span class="nb">}</span>,
+    ylabel=<span class="nb">{</span>Solubility [g per 100 g water]<span class="nb">}</span>,
+    xmin=0, xmax=100,
+    ymin=0, ymax=120,
+    xtick=<span class="nb">{</span>0,20,40,60,80,100<span class="nb">}</span>,
+    ytick=<span class="nb">{</span>0,20,40,60,80,100,120<span class="nb">}</span>,
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+<span class="k">\addplot</span>[
+    color=blue,
+    mark=square,
+    ]
+    coordinates <span class="nb">{</span>
+    (0,23.1)(10,27.5)(20,32)(30,37.8)(40,44.6)(60,61.8)(80,83.8)(100,114)
+    <span class="nb">}</span>;
+    <span class="k">\legend</span><span class="nb">{</span>CuSO<span class="s">\(</span><span class="nb">_</span><span class="m">4</span><span class="nv">\cdot</span><span class="s">\)</span>5H<span class="s">\(</span><span class="nb">_</span><span class="m">2</span><span class="s">\)</span>O<span class="nb">}</span>
+    
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+example+3
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Btextcomp%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0APlotting+from+data%3A%0A%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%5B%0A++++title%3D%7BTemperature+dependence+of+CuSO%5C%28_4%5Ccdot%5C%295H%5C%28_2%5C%29O+solubility%7D%2C%0A++++xlabel%3D%7BTemperature+%5B%5Ctextcelsius%5D%7D%2C%0A++++ylabel%3D%7BSolubility+%5Bg+per+100+g+water%5D%7D%2C%0A++++xmin%3D0%2C+xmax%3D100%2C%0A++++ymin%3D0%2C+ymax%3D120%2C%0A++++xtick%3D%7B0%2C20%2C40%2C60%2C80%2C100%7D%2C%0A++++ytick%3D%7B0%2C20%2C40%2C60%2C80%2C100%2C120%7D%2C%0A++++legend+pos%3Dnorth+west%2C%0A++++ymajorgrids%3Dtrue%2C%0A++++grid+style%3Ddashed%2C%0A%5D%0A%0A%5Caddplot%5B%0A++++color%3Dblue%2C%0A++++mark%3Dsquare%2C%0A++++%5D%0A++++coordinates+%7B%0A++++%280%2C23.1%29%2810%2C27.5%29%2820%2C32%29%2830%2C37.8%29%2840%2C44.6%29%2860%2C61.8%29%2880%2C83.8%29%28100%2C114%29%0A++++%7D%3B%0A++++%5Clegend%7BCuSO%5C%28_4%5Ccdot%5C%295H%5C%28_2%5C%29O%7D%0A++++%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/d/d0/Plgplotsex3.png" alt="Plgplotsex3.png" width="600" height="531" style="display: block; margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_3">Explanation of the code</span></h4>
+<p>There are some new commands and parameters here:
+</p>
+<dl><dt><code>title={Temperature dependence of CuSO\(_4\cdot\)5H\(_2\)O solubility}</code>.</dt>
+<dd>As you might expect, assigns a title to the figure. The title will be displayed above the plot.</dd></dl>
+<dl><dt><code>xmin=0, xmax=100, ymin=0, ymax=120</code>.</dt>
+<dd>Minimum and maximum bounds of the x and y axes.</dd></dl>
+<dl><dt><code>xtick={0,20,40,60,80,100}, ytick={0,20,40,60,80,100,120}</code>.</dt>
+<dd>Points where the marks are placed. If empty the ticks are set automatically.</dd></dl>
+<dl><dt><code>legend pos=north west</code>.</dt>
+<dd>Position of the legend box. Check the <a href="#Reference_guide">reference guide</a> for more options.</dd></dl>
+<dl><dt><code>ymajorgrids=true</code>.</dt>
+<dd>This Enables/disables grid lines at the tick positions on the y axis. Use <code>xmajorgrids</code> to enable grid lines on the x axis.</dd></dl>
+<dl><dt><code>grid style=dashed</code>.</dt>
+<dd>Self-explanatory. To display dashed grid lines.</dd></dl>
+<dl><dt><code>mark=square</code>.</dt>
+<dd>This draws a squared mark at each point in the <code>coordinates</code> array. Each mark will be connected with the next one by a straight line.</dd></dl>
+<dl><dt><code>coordinates {(0,23.1)(10,27.5)(20,32)...}</code></dt>
+<dd>Coordinates of the points to be plotted. This is the data you want analyse graphically.</dd></dl>
+<p>If the data is in a file, which is the case most of the time; instead of the commands <code>\addplot</code> and <code>coordinates</code> you should use <code>\addplot table {file_with_the_data.dat}</code>, the rest of the options are valid in this environment.
+</p>
+<h3><span class="mw-headline" id="Scatter_plots">Scatter plots</span></h3>
+<p>Scatter plots are used to represent information by using some kind of marks and are commonly used when computing statistical regression. In this example we'll create a scatter plot using data contained in a file called <code>scattered_example.dat</code>, in which the data looks like this:
+</p>
+<pre>GPA  ma  ve  co   un
+3.45 643 589 3.76 3.52
+2.78 558 512 2.87 2.91
+2.52 583 503 2.54 2.4
+3.67 685 602 3.83 3.47
+3.24 592 538 3.29 3.47
+2.1 562 486 2.64 2.37
+...
+</pre>
+<p>Our scatter plot uses the first two columns of the data:
+</p>
+<div class="Example">
+<div class="Code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[
+    enlargelimits=false,
+]
+<span class="k">\addplot</span>+[
+    only marks,
+    scatter,
+    mark=halfcircle*,
+    mark size=2.9pt]
+table[meta=ma]
+<span class="nb">{</span>scattered<span class="nb">_</span>example.dat<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/c/cf/Scattered.png" alt="Scattered.png" width="600" height="504" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/project/new/template/20099?id=68399290&amp;templateName=Scatter+plot+example&amp;latexEngine=pdflatex&amp;texImage=texlive-full%3A2020.1&amp;mainFile="><i class="fa fa-share"></i>&nbsp;Open a scatter plot project example in Overleaf (contains the data file <code>scattered_example.dat</code>).</a>
+</p><p><br>
+</p>
+<h4><span class="mw-headline" id="Explanation_of_the_code_4">Explanation of the code</span></h4>
+<p>The parameters passed to the <code>axis</code> and <code>addplot</code> environments can also be used in a data plot, except for <code>scatter</code>. Below the description of the code:
+</p>
+<dl><dt><code>enlarge limits=false</code></dt>
+<dd>This will shrink the axes so the point with maximum and minimum values lay on the edge of the plot.</dd></dl>
+<dl><dt><code>only marks</code></dt>
+<dd>Really explicit, will put a mark on each point.</dd></dl>
+<dl><dt><code>scatter</code></dt>
+<dd>When <code>scatter</code> is used the points are coloured depending on a value, the colour is given by the <code>meta</code> parameter explained below.</dd></dl>
+<dl><dt><code>mark=halfcircle*</code></dt>
+<dd>The kind of mark to use on each point, check the <a href="#Reference_guide">reference guide</a> for a list of possible values.</dd></dl>
+<dl><dt><code>mark size=2.9pt</code></dt>
+<dd>The size of each mark, different units can be used.</dd></dl>
+<dl><dt><code>table[meta=ma]{scattered_example.dat};</code></dt>
+<dd>Here the <code>table</code> command tells latex that the data to be plotted is in a file. The <code>meta=ma</code> parameter is passed to choose the column that determines the colour of each point. Inside curly brackets is the name of the data file.</dd></dl>
+<h3><span class="mw-headline" id="Bar_graphs">Bar graphs</span></h3>
+<p>Bar graphs (also known as bar charts and bar plots) are used to display gathered data, mainly statistical data about a population of some sort. Bar plots in <code>pgfplots</code> are highly configurable, but here we are going to show a plain example:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[
+	x tick label style=<span class="nb">{</span>
+		/pgf/number format/1000 sep=<span class="nb">}</span>,
+	ylabel=Year,
+	enlargelimits=0.05,
+	legend style=<span class="nb">{</span>at=<span class="nb">{</span>(0.5,-0.1)<span class="nb">}</span>,
+	anchor=north,legend columns=-1<span class="nb">}</span>,
+	ybar interval=0.7,
+]
+<span class="k">\addplot</span> 
+	coordinates <span class="nb">{</span>(2012,408184) (2011,408348)
+		 (2010,414870) (2009,412156)<span class="nb">}</span>;
+<span class="k">\addplot</span> 
+	coordinates <span class="nb">{</span>(2012,388950) (2011,393007) 
+		(2010,398449) (2009,395972)<span class="nb">}</span>;
+<span class="k">\legend</span><span class="nb">{</span>Men,Women<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+bar+chart+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Btextcomp%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%5B%0A%09x+tick+label+style%3D%7B%0A%09%09%2Fpgf%2Fnumber+format%2F1000+sep%3D%7D%2C%0A%09ylabel%3DYear%2C%0A%09enlargelimits%3D0.05%2C%0A%09legend+style%3D%7Bat%3D%7B%280.5%2C-0.1%29%7D%2C%0A%09anchor%3Dnorth%2Clegend+columns%3D-1%7D%2C%0A%09ybar+interval%3D0.7%2C%0A%5D%0A%5Caddplot+%0A%09coordinates+%7B%282012%2C408184%29+%282011%2C408348%29%0A%09%09+%282010%2C414870%29+%282009%2C412156%29%7D%3B%0A%5Caddplot+%0A%09coordinates+%7B%282012%2C388950%29+%282011%2C393007%29+%0A%09%09%282010%2C398449%29+%282009%2C395972%29%7D%3B%0A%5Clegend%7BMen%2CWomen%7D%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> bar code example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p><br>
+The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/30/Barchartsexample.png" alt="Barchartsexample.png" style="width:600px;height:548px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_5">Explanation of the code</span></h4>
+<p>The figure starts with the (<a href="#Introduction">previously explained</a>) declaration of the <code>tikzpicture</code> and <code>axis</code> environments, but the <code>axis</code> declaration has a number of new parameters:
+</p>
+<dl><dt><code>x tick label style={/pgf/number format/1000 sep=}</code></dt>
+<dd>This piece of code defines a complete style for the plot. With this style you may include several <code>\addplot</code> commands within this <code>axis</code> environment, they will fit and look nice together with no further tweaks (the <code>ybar</code> parameter described below is mandatory for this to work).</dd></dl>
+<dl><dt><code>enlargelimits=0.05</code>.</dt>
+<dd>Enlarging the limits in a bar plot is necessary because these kind of plots often require some extra space above the bar to look better and/or add a label. Then number 0.05 is relative to the total height of of the plot.</dd></dl>
+<dl><dt><code>legend style={at={(0.5,-0.2)}, anchor=north,legend columns=-1}</code></dt>
+<dd>Again, this will work just fine most of the time. If anything, change the value of <code>-0.2</code> to locate the legend closer/farther from the x-axis.</dd></dl>
+<dl><dt><code>ybar interval=0.7,</code></dt>
+<dd>Thickness of each bar. <code>1</code> meaning the bars will be one next to the other with no gaps and <code>0</code> meaning there will be no bars, but only vertical lines.</dd></dl>
+<p>The <code>coordinates</code> in this kind of plot determine the base point of the bar and its height. 
+</p><p>The labels on the y-axis will show up to 4 digits. If the numbers you are working with are greater than 9999 <code>pgfplots</code> will use the same notation as in the example.
+</p>
+<h2><span class="mw-headline" id="3D_Plots">2.3.1.4 3D Plots</span></h2>
+<p><code>pgfplots</code> has the 3D Plotting capabilities that you may expect in a plotting software.
+</p>
+<h3><span class="mw-headline" id="Plotting_mathematical_expressions_2">Plotting mathematical expressions</span></h3>
+<p>There's a simple example about this at the <a href="#Introduction">introduction</a>, let's work on something slightly more complex:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[
+    title=Example using the mesh parameter,
+    hide axis,
+    colormap/cool,
+]
+<span class="k">\addplot</span>3[
+    mesh,
+    samples=50,
+    domain=-8:8,
+]
+<span class="nb">{</span>sin(deg(sqrt(x<span class="nb">^</span>2+y<span class="nb">^</span>2)))/sqrt(x<span class="nb">^</span>2+y<span class="nb">^</span>2)<span class="nb">}</span>;
+<span class="k">\addlegendentry</span><span class="nb">{</span><span class="s">\(</span><span class="nv">\frac</span><span class="nb">{sin</span><span class="o">(</span><span class="nb">r</span><span class="o">)</span><span class="nb">}{r}</span><span class="s">\)</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+3D+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%5B%0A++++title%3DExample+using+the+mesh+parameter%2C%0A++++hide+axis%2C%0A++++colormap%2Fcool%2C%0A%5D%0A%5Caddplot3%5B%0A++++mesh%2C%0A++++samples%3D50%2C%0A++++domain%3D-8%3A8%2C%0A%5D%0A%7Bsin%28deg%28sqrt%28x%5E2%2By%5E2%29%29%29%2Fsqrt%28x%5E2%2By%5E2%29%7D%3B%0A%5Caddlegendentry%7B%5C%28%5Cfrac%7Bsin%28r%29%7D%7Br%7D%5C%29%7D%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> 3D example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/4/4b/Pgfplots3dexample.png" alt="Pgfplots3dexample.png" style="width:600px;height:503px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_6">Explanation of the code</span></h4>
+<p>Most of the commands here have already been explained, but there are 3 new things:
+</p>
+<dl><dt><code>hide axis</code></dt>
+<dd>This option in the <code>axis</code> environment is self descriptive, the axis won't be shown.</dd></dl>
+<dl><dt><code>colormap/cool</code></dt>
+<dd>Is the colour scheme to be used in the plot. Check the <a href="#Reference_guide">reference guide</a> for more colour schemes.</dd></dl>
+<dl><dt><code>mesh</code></dt>
+<dd>This option is self-descriptive too, check also the <code>surf</code> parameter in the <a href="#Introduction">introductory example</a>.</dd></dl>
+<p><strong>Note</strong>: When working with trigonometric functions <code>pgfplots</code> uses degrees as default units, if the angle is in radians (as in this example) you have to use the <code>deg</code> function to convert to degrees.
+</p>
+<h3><span class="mw-headline" id="Contour_plots">Contour plots</span></h3>
+<p>In <code>pgfplots</code> it is possible to plot contour plots, but the data has to be pre-calculated by an external program. Let's see an example:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+[
+    title=<span class="nb">{</span>Contour plot, view from top<span class="nb">}</span>,
+    view=<span class="nb">{</span>0<span class="nb">}{</span>90<span class="nb">}</span>
+]
+<span class="k">\addplot</span>3[
+    contour gnuplot=<span class="nb">{</span>levels=<span class="nb">{</span>0.8, 0.4, 0.2, -0.2<span class="nb">}}</span>
+]
+<span class="nb">{</span>sin(deg(sqrt(x<span class="nb">^</span>2+y<span class="nb">^</span>2)))/sqrt(x<span class="nb">^</span>2+y<span class="nb">^</span>2)<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+contour+plot+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%0A%5B%0A++++title%3D%7BContour+plot%2C+view+from+top%7D%2C%0A++++view%3D%7B0%7D%7B90%7D%0A%5D%0A%5Caddplot3%5B%0A++++contour+gnuplot%3D%7Blevels%3D%7B0.8%2C+0.4%2C+0.2%2C+-0.2%7D%7D%0A%5D%0A%7Bsin%28deg%28sqrt%28x%5E2%2By%5E2%29%29%29%2Fsqrt%28x%5E2%2By%5E2%29%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> contour plot example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3a/Contourplotexample.png" alt="Contourplotexample.png" style="width:600px; height:530px; padding:20px; display: block; margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_7">Explanation of the code</span></h4>
+<p>This is a plot of some contour lines for the same equation used in the previous section. The value of the <code>title</code> parameter is inside curly brackets because it contains a comma, so we use the grouping brackets to avoid any confusion with the other parameters passed to the <code>\begin{axis}</code> declaration. There are two new commands:
+</p>
+<dl><dt><code>view={0}{90}</code></dt>
+<dd>This changes the view of the plot. The parameter is passed to the <code>axis</code> environment, which means this can be used in any other type of 3D plot. The first value is a rotation, in degrees, around the z-axis; the second value is to rotate the view around the x-axis. In this example when we combine a 0° rotation around the z-axis and a 90° rotation around the x-axis we end up with a view of the plot from top.</dd></dl>
+<dl><dt><code>contour gnuplot={levels={0.8, 0.4, 0.2, -0.2}}</code></dt>
+<dd>This line of code does two things: First, it tells LaTeX to use the external software <a rel="nofollow" class="external text" href="http://www.gnuplot.info/"><code>gnuplot</code></a> to compute the contour lines; this works fine in Overleaf but if you want to use this command in your local LaTeX installation you have to install gnuplot first (matlab will also work, in such case write <code>matlab</code> instead of <code>gnuplot</code> in the command). Second, the sub parameter <code>levels</code> is a list of values of elevation levels where the contour lines are to be computed.</dd></dl>
+<h3><span class="mw-headline" id="Plotting_surface_from_data">Plotting a surface from data</span></h3>
+<p>To plot a set of data into a 3D surface all we need is the coordinates of each point. These coordinates could be an unordered set or, in this case, a matrix:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\addplot</span>3[
+    surf,
+] 
+coordinates <span class="nb">{</span>
+(0,0,0) (0,1,0) (0,2,0)
+
+(1,0,0) (1,1,0.6) (1,2,0.7)
+
+(2,0,0) (2,1,0.7) (2,2,1.8)
+<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=plotting+a+surface+from+data+with+pgfplots
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%0A%5Caddplot3%5B%0A++++surf%2C%0A%5D+%0Acoordinates+%7B%0A%280%2C0%2C0%29+%280%2C1%2C0%29+%280%2C2%2C0%29%0A%0A%281%2C0%2C0%29+%281%2C1%2C0.6%29+%281%2C2%2C0.7%29%0A%0A%282%2C0%2C0%29+%282%2C1%2C0.7%29+%282%2C2%2C1.8%29%0A%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> 3D surface example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/2d/3dsurfacedata.png" alt="3dsurfacedata.png" width="600" height="490" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_data">Explanation of the data</span></h4>
+<p>The points passed to the <code>coordinates</code> parameter are treated as contained in a 3 × 3 matrix, using a blank line as the separator for each matrix row.
+</p><p>All the options for 3D plots in this article apply to data surfaces.
+</p>
+<h3><span class="mw-headline" id="Parametric_plot">Parametric plot</span></h3>
+<p>The syntax for parametric plots is slightly different. Let's see an example:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+    [
+    view=<span class="nb">{</span>60<span class="nb">}{</span>30<span class="nb">}</span>,
+    ]
+<span class="k">\addplot</span>3[
+    domain=0:5*pi,
+    samples = 60,
+    samples y=0,
+]
+(<span class="nb">{</span>sin(deg(x))<span class="nb">}</span>,
+<span class="nb">{</span>cos(deg(x))<span class="nb">}</span>,
+<span class="nb">{</span>x<span class="nb">}</span>);
+<span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=pgfplots+parametric+plot+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bmargin%3D0.5in%5D%7Bgeometry%7D%0A%5Cusepackage%7Bpgfplots%7D%0A%5Cpgfplotsset%7Bwidth%3D10cm%2Ccompat%3D1.9%7D%0A%25%5Cusepgfplotslibrary%7Bexternal%7D%0A%25%5Ctikzexternalize%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cbegin%7Baxis%7D%0A++++%5B%0A++++view%3D%7B60%7D%7B30%7D%2C%0A++++%5D%0A%5Caddplot3%5B%0A++++domain%3D0%3A5%2Api%2C%0A++++samples+%3D+60%2C%0A++++samples+y%3D0%2C%0A%5D%0A%28%7Bsin%28deg%28x%29%29%7D%2C%0A%7Bcos%28deg%28x%29%29%7D%2C%0A%7Bx%7D%29%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this <code>pgfplots</code> parametric plot example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>The output from this code is shown in the image below—the LaTeX document preamble is added automatically when you open the link:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/9/94/Parametricplot.png" alt="Parametricplot.png" width="600" height="494" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<h4><span class="mw-headline" id="Explanation_of_the_code_8">Explanation of the code</span></h4>
+<p>There are only two new things in this example: first, the <code>samples y=0</code> to prevent <code>pgfplots</code> from joining the extreme points of the spiral and; second, the way the function to plot is passed to the <code>addplot3</code> environment. Each parameter function is grouped inside curly brackets and the three parameters are delimited with a parenthesis.
+</p>
+<h2><span class="mw-headline" id="Reference_guide">2.3.1.5 Reference guide</span></h2>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Command/Option/Environment
+</th>
+<th>Description
+</th>
+<th>Possible Values
+</th></tr>
+<tr>
+<td><b>axis</b>
+</td>
+<td>Normal plots with linear scaling
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>semilogxaxis</b>
+</td>
+<td>logarithmic scaling of x and normal scaling for y
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>semilogyaxis</b>
+</td>
+<td>logarithmic scaling for y and normal scaling for x
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>loglogaxis</b>
+</td>
+<td>logarithmic scaling for the x and y axes
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>axis lines</b>
+</td>
+<td>changes the way the axes are drawn. default is '<i>box</i>
+</td>
+<td>box, left, middle, center, right, none
+</td></tr>
+<tr>
+<td><b>legend pos</b>
+</td>
+<td>position of the legend box
+</td>
+<td>south west, south east, north west, north east, outer north east
+</td></tr>
+<tr>
+<td><b>mark</b>
+</td>
+<td>type of marks used in data plotting. When a single-character is used, the character appearance is very similar to the actual mark.
+</td>
+<td>*, x , +, |, o, asterisk, star, 10-pointed star, oplus, oplus*, otimes, otimes*, square, square*, triangle, triangle*, diamond, halfdiamond*, halfsquare*, right*, left*, Mercedes star, Mercedes star flipped, halfcircle, halfcircle*, pentagon, pentagon*, cubes. (cubes only work on 3d plots).
+</td></tr>
+<tr>
+<td><b>colormap</b>
+</td>
+<td>colour scheme to be used in a plot, can be personalized but there are some predefined colormaps
+</td>
+<td>hot, hot2, jet, blackwhite, bluered, cool, greenyellow, redyellow, violet.
+</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1><span class="header-section-number" id="TikZ_package">2.3.2 TikZ package</span></h1>
+
+
+
+<h2><span class="mw-headline" id="Introduction">2.3.2.1 Introduction</span></h2>
+<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/PGF/TikZ">Ti<i>k</i>Z</a> is probably the most complex and powerful tool to create graphic elements in <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span>. Starting with a simple example, this article introduces some basic concepts: drawing lines, dots, curves, circles, rectangles etc. 
+</p><p>Firstly, load the <code>tikz</code> package by including the line <code>\usepackage{tikz}</code> in the preamble of your document, then draw a graphic using the <code>tikzpicture</code> environment.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\draw</span><span class="na">[gray, thick]</span> (-1,2) -- (2,-4);
+<span class="k">\draw</span><span class="na">[gray, thick]</span> (-1,-1) -- (2,2);
+<span class="k">\filldraw</span><span class="na">[black]</span> (0,0) circle (2pt) node[anchor=west]<span class="nb">{</span>Intersection point<span class="nb">}</span>;
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=First+TikZ+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Btikz%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%5Bgray%2C+thick%5D+%28-1%2C2%29+--+%282%2C-4%29%3B%0A%5Cdraw%5Bgray%2C+thick%5D+%28-1%2C-1%29+--+%282%2C2%29%3B%0A%5Cfilldraw%5Bblack%5D+%280%2C0%29+circle+%282pt%29+node%5Banchor%3Dwest%5D%7BIntersection+point%7D%3B%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>This example produces the following output:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/1/1f/OLV2tikz1.png" alt="OLV2tikz1.png" width="300" height="458" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<p>In this example two lines and one point are drawn. To add a line the command <code>\draw[gray, thick]</code> defines a graphic element whose <i>colour</i> is <code>gray</code> and with a <code>thick</code> stroke. The line is actually defined by it's two endpoints, <code>(-1,2)</code> and <code>(2,-4)</code>, joined by <code>--</code>.
+</p><p>The <i>point</i> is actually a <code>circle</code> drawn by <code>\filldraw[black]</code>, this command will not only draw the circle but fill it using black. In this command the centre point <code>(0,0)</code> and the radius <code>(2pt)</code> are declared. Next to the point is a <code>node</code>, which is actually a box containing the text <code>intersection point</code>, and anchored at the <code>west</code> of the point.
+</p><p>It's important to notice the semicolon <code>;</code> used at the end of each <code>draw</code> command.
+</p><p>Note: The <code>tikzfigure</code> environment can be enclosed inside a figure or similar environment. See the <a href="https://www.overleaf.com/learn/latex/Inserting_Images" title="Inserting Images">Inserting Images</a> article for more information on this topic.
+</p>
+<h2><span id="Basic_elements"></span><span class="mw-headline" id="Basic_elements">2.3.2.2 Basic elements: points, lines and paths</span></h2>
+<p>In this section we provide some examples showing how to create some basic graphic elements which can be combined to create more elaborate figures.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+
+<span class="k">\draw</span> (-2,0) -- (2,0);
+<span class="k">\filldraw</span> [gray] (0,0) circle (2pt);
+<span class="k">\draw</span> (-2,-2) .. controls (0,0) .. (2,-2);
+<span class="k">\draw</span> (-2,2) .. controls (-1,0) and (1,0) .. (2,2);
+
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Second+TikZ+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Btikz%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%0A%5Cdraw+%28-2%2C0%29+--+%282%2C0%29%3B%0A%5Cfilldraw+%5Bgray%5D+%280%2C0%29+circle+%282pt%29%3B%0A%5Cdraw+%28-2%2C-2%29+..+controls+%280%2C0%29+..+%282%2C-2%29%3B%0A%5Cdraw+%28-2%2C2%29+..+controls+%28-1%2C0%29+and+%281%2C0%29+..+%282%2C2%29%3B%0A%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>This example produces the following output:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/7/7e/OLV2tikz2.png" alt="OLV2tikz2.png" width="400" height="399" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<p>There are three basic commands in this example:
+</p>
+<ul><li><strong><code>\draw (-2,0) -- (2,0);</code></strong>: This defines a line whose endpoint are <code>(-2,0)</code> and <code>(2,0)</code>.</li>
+<li><strong><code>\filldraw [gray] (0,0) circle (2pt);</code></strong>: The point is created as a very small <code>gray</code> <code>circle</code> centred at <code>(0,0)</code> and whose radius is <code>(2pt)</code>. The <code>\filldraw</code> command is used to draw elements and fill them with a specific colour. See the next section for more examples.</li>
+<li><strong><code>\draw (-2,2) .. controls (-1,0) and (1,0) .. (2,2);</code></strong>: Draws a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curve</a>. There are 4 points defining it: <code>(-2,2)</code> and <code>(2,2)</code> are its endpoints, <code>(-1,0)</code> and <code>(1,0)</code> are <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Control_point_(mathematics)"><em>control points</em></a> that determine "how curved" it is. You can think of these two points as "attractor points".</li></ul>
+<h2><span id="Basic_geometric_shapes:_Circles.2C_ellipses_and_polygons"></span><span class="mw-headline" id="Basic_geometric_shapes">2.3.2.3 Basic geometric shapes: Circles, ellipses and polygons</span></h2>
+<p>Geometric figures can be constructed from simpler elements so let's start with circles, ellipses and arcs.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\filldraw</span><span class="na">[color=red!60, fill=red!5, very thick]</span>(-1,0) circle (1.5);
+<span class="k">\fill</span><span class="na">[blue!50]</span> (2.5,0) ellipse (1.5 and 0.5);
+<span class="k">\draw</span><span class="na">[ultra thick, -&gt;]</span> (6.5,0) arc (0:220:1);
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Third+TikZ+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Btikz%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cfilldraw%5Bcolor%3Dred%2160%2C+fill%3Dred%215%2C+very+thick%5D%28-1%2C0%29+circle+%281.5%29%3B%0A%5Cfill%5Bblue%2150%5D+%282.5%2C0%29+ellipse+%281.5+and+0.5%29%3B%0A%5Cdraw%5Bultra+thick%2C+-%3E%5D+%286.5%2C0%29+arc+%280%3A220%3A1%29%3B%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>This example produces the following output:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/03/TikzEx3.png" alt="TikzEx3.png" width="400" height="210" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<ul><li><strong><code>\filldraw[color=red!60, fill=red!5, very thick](-1,0) circle (1.5);</code></strong>: This command was used in the previous section to draw a <em>point</em>, but in this instance there are some additional parameters inside the brackets. These are explained below:
+<ul><li><strong><code>color=red!60</code></strong>: The colour of the ring around the circle is set to 60% red (lighter than "pure" red). See the <a href="#Reference_guide">reference guide</a> for a list of the default colours available in <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span>; also, see <a href="https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX" class="mw-redirect" title="Using colours in LaTeX">Using colours in LaTeX</a> to learn how to create your own colours.</li>
+<li><strong><code>fill=red!5</code></strong>: The circle is filled with an even lighter shade of red.</li>
+<li><strong><code>very thick</code></strong>: This parameter defines the thickness of the stroke. See the <a href="#Reference_guide">reference guide</a> for a complete list of values.</li></ul></li>
+<li><strong><code>\fill[blue!50] (2.5,0) ellipse (1.5 and 0.5);</code></strong>: To create an ellipse you provide a centre point <code>(2.5,0)</code>, and two radii: horizontal and vertical (<code>1.5</code> and <code>0.5</code> respectively). Also notice the command <code>fill</code> instead of <code>draw</code> or filldraw, this is because, in this case, there's no need to control outer and inner colours.</li>
+<li><strong><code>\draw[ultra thick, -&gt;] (6.5,0) arc (0:220:1);</code></strong>: This command will draw an arc starting at <code>(6.5,0)</code>. The extra parameter <code> -&gt; </code> indicates that the arc will have an arrow at the end. In addition to the starting point you must provide three additional values: the starting and ending angles, and the radius; here, these three parameter values are provided in the format <code>(0:220:1)</code>.</li></ul>
+<p>In addition to curved geometric shapes you can also create elements that use straight lines, using a similar syntax:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\draw</span><span class="na">[blue, very thick]</span> (0,0) rectangle (3,2);
+<span class="k">\draw</span><span class="na">[orange, ultra thick]</span> (4,0) -- (6,0) -- (5.7,2) -- cycle;
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Fourth+TikZ+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Btikz%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%5Bblue%2C+very+thick%5D+%280%2C0%29+rectangle+%283%2C2%29%3B%0A%5Cdraw%5Borange%2C+ultra+thick%5D+%284%2C0%29+--+%286%2C0%29+--+%285.7%2C2%29+--+cycle%3B%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>This example produces the following output:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/0e/OLV2tikz4.png" alt="OLV2tikz4.png" width="400" height="143" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<ul><li><strong><code>\draw[blue, very thick] (0,0) rectangle (3,2);</code></strong>: Rectangles are created by the special command <code>rectangle</code>. You have to provide two points, the first one is where the "pencil" begins to draw the rectangle and the second one is the diagonally opposite corner point.</li>
+<li><strong><code>\draw[orange, ultra thick] (4,0) -- (6,0) -- (5.7,2) -- cycle;</code></strong>: To draw a polygon we draw a <em>closed</em> path of straight lines: a line from <code>(4,0)</code> to <code>(6,0)</code> and a line from <code>(6,0)</code> to <code>(5.7,2)</code>. The <code>cycle</code> instruction means that the start and end points should coincide to create a "closed" path (shape), which results in construction of the final line segment.</li></ul>
+<h2><span class="mw-headline" id="Diagrams">2.3.2.4 Diagrams</span></h2>
+<p>Nodes are probably the most versatile elements in TikZ. We've already used one node in the introduction—to add some text to the figure. The next example uses nodes to create a diagram.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\usetikzlibrary</span><span class="nb">{</span>positioning<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[
+roundnode/.style=<span class="nb">{</span>circle, draw=green!60, fill=green!5, very thick, minimum size=7mm<span class="nb">}</span>,
+squarednode/.style=<span class="nb">{</span>rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm<span class="nb">}</span>,
+]
+<span class="c">%Nodes</span>
+<span class="k">\node</span><span class="na">[squarednode]</span>      (maintopic)                              <span class="nb">{</span>2<span class="nb">}</span>;
+<span class="k">\node</span><span class="na">[roundnode]</span>        (uppercircle)       [above=of maintopic] <span class="nb">{</span>1<span class="nb">}</span>;
+<span class="k">\node</span><span class="na">[squarednode]</span>      (rightsquare)       [right=of maintopic] <span class="nb">{</span>3<span class="nb">}</span>;
+<span class="k">\node</span><span class="na">[roundnode]</span>        (lowercircle)       [below=of maintopic] <span class="nb">{</span>4<span class="nb">}</span>;
+
+<span class="c">%Lines</span>
+<span class="k">\draw</span><span class="na">[-&gt;]</span> (uppercircle.south) -- (maintopic.north);
+<span class="k">\draw</span><span class="na">[-&gt;]</span> (maintopic.east) -- (rightsquare.west);
+<span class="k">\draw</span><span class="na">[-&gt;]</span> (rightsquare.south) .. controls +(down:7mm) and +(right:7mm) .. (lowercircle.east);
+<span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=More+advanced+TikZ+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Btikz%7D%0A%5Cusetikzlibrary%7Bpositioning%7D%0A%5Cbegin%7Bdocument%7D%0A%5Cbegin%7Btikzpicture%7D%5B%0Aroundnode%2F.style%3D%7Bcircle%2C+draw%3Dgreen%2160%2C+fill%3Dgreen%215%2C+very+thick%2C+minimum+size%3D7mm%7D%2C%0Asquarednode%2F.style%3D%7Brectangle%2C+draw%3Dred%2160%2C+fill%3Dred%215%2C+very+thick%2C+minimum+size%3D5mm%7D%2C%0A%5D%0A%25Nodes%0A%5Cnode%5Bsquarednode%5D++++++%28maintopic%29++++++++++++++++++++++++++++++%7B2%7D%3B%0A%5Cnode%5Broundnode%5D++++++++%28uppercircle%29+++++++%5Babove%3Dof+maintopic%5D+%7B1%7D%3B%0A%5Cnode%5Bsquarednode%5D++++++%28rightsquare%29+++++++%5Bright%3Dof+maintopic%5D+%7B3%7D%3B%0A%5Cnode%5Broundnode%5D++++++++%28lowercircle%29+++++++%5Bbelow%3Dof+maintopic%5D+%7B4%7D%3B%0A%0A%25Lines%0A%5Cdraw%5B-%3E%5D+%28uppercircle.south%29+--+%28maintopic.north%29%3B%0A%5Cdraw%5B-%3E%5D+%28maintopic.east%29+--+%28rightsquare.west%29%3B%0A%5Cdraw%5B-%3E%5D+%28rightsquare.south%29+..+controls+%2B%28down%3A7mm%29+and+%2B%28right%3A7mm%29+..+%28lowercircle.east%29%3B%0A%5Cend%7Btikzpicture%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i>&nbsp;Open this example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>This example produces the following output:
+</p>
+<div class="example">
+  <div class="output" style="text-align: center;">
+      <img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/e/e3/OLV2tikz5.png" alt="OLV2tikz5.png" width="300" height="519" style="padding:20px;display: block;margin: 0 auto;">
+  </div>
+</div>
+
+<p>There are essentially three commands in this figure: A node definition, a node declaration and lines that join two nodes.
+</p>
+<ul><li><strong><code>roundnode/.style={circle, draw=green!60, fill=green!5, very thick, minimum size=7mm}</code></strong>: Passed as a parameter to the <code>tikzpicture</code> environment. It defines a node that will be referenced as <code>roundnode</code>: this node will be a circle whose outer ring will be drawn using the colour <code>green!60</code> and will be filled using <code>green!5</code>. The stroke will be <code>very thick</code> and its <code>minimum size</code> is <code>7mm</code>. The line below this defines a second rectangle-shaped node called <code>squarednode</code>, using similar parameters.</li>
+<li><strong><code>\node[squarednode] (maintopic)  {2};</code></strong>: This will create a <code>squarednode</code>, as defined in the previous command. This node will have an id of <code>maintopic</code> and will contain the  number <code>2</code>. If you leave an empty space inside the braces no text will be displayed.</li>
+<li><strong><code>[above=of maintopic]</code></strong>: Notice that all but the first node have an additional parameter that determines its position relative to other nodes. For instance, <code>[above=of maintopic]</code> means that this node should appear above the node named <code>maintopic</code>. For this positioning system to work you have to add <code>\usetikzlibrary{positioning}</code> to your preamble. Without the <code>positioning</code> library, you can use the syntax <code>above of=maintopic</code> instead, but the <code>positioning</code> syntax is more flexible and powerful: you can extend it to write <code>above=<strong>3cm</strong> of maintopic</code> i.e. control the actual distance from <code>maintopic</code>.</li>
+<li><strong><code>\draw[-&gt;] (uppercircle.south) -- (maintopic.north);</code></strong>: An arrow-like straight line will be drawn. The syntax has been already explained in the <a href="#Basic_elements">basic elements</a> section. The only difference is the manner in which we write the endpoints of the line: by referencing a node (this is why we named them) and a position relative to the node.</li></ul>
+<h2><span class="mw-headline" id="Reference_Guide">2.3.2.5 Reference Guide</span></h2>
+<p>Possible color and thickness parameters in the <code>tikz</code> package:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>parameter
+</th>
+<th>values
+</th>
+<th>picture
+</th></tr>
+<tr>
+<td>color
+</td>
+<td>white, black, red, green, blue, cyan, magenta, yellow
+</td>
+<td><img alt="BasicColours.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/a/af/BasicColours.png" decoding="async" width="300" height="182">
+</td></tr>
+<tr>
+<td>thickness
+</td>
+<td>ultra thin, very thin, thin, thick, very thick, ultra thick
+</td>
+<td><img alt="Thickness.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3a/Thickness.png" decoding="async" width="300" height="192">
+</td></tr></tbody></table>
+<p>More colours may be available in your <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span> distribution. See <a href="https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX" class="mw-redirect" title="Using colours in LaTeX">Using colours in LaTeX</a>
+</p>
+<!--
+<h2><span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<p>For more information see:
+</p>
+<ul><li><a href="/learn/latex/Using_colours_in_LaTeX" class="mw-redirect" title="Using colours in LaTeX">Using colours in LaTeX</a></li>
+<li><a href="/learn/latex/Pgfplots_package" title="Pgfplots package">Pgfplots package</a></li>
+<li><a href="/learn/latex/Inserting_Images" title="Inserting Images">Inserting Images</a></li>
+<li><a href="/learn/latex/Lists_of_tables_and_figures" title="Lists of tables and figures">Lists of tables and figures</a></li>
+<li><a href="/learn/latex/Positioning_images_and_tables" title="Positioning images and tables">Positioning images and tables</a></li>
+<li><a href="/learn/latex/Picture_environment" title="Picture environment">Drawing diagrams directly in LaTeX</a></li>
+<li><a rel="nofollow" class="external text" href="http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf">The TikZ and PGF Packages Manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.texample.net/tikz/examples/all/">TikZ and PGF examples at TeXample.net</a></li></ul>
+-->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="typesetting_laTeX.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="presenting-ideas-orally.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Wendyyyyyyyyyyy/Communication-Intensive-Courses-in-Mathematics/edit/master/writing.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
